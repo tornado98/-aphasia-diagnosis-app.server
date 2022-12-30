@@ -1,32 +1,40 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import mongoose from 'mongoose';
-import cors from 'cors';
-import dotenv from 'dotenv';
-import helmet from 'helmet';
-import morgan from 'morgan';
+require('dotenv').config();
+const express = require('express');
+const app = express()
+const path = require('path');
+const errorHandler = require('./middleware/errorHandler');
+const { logger } = require('./middleware/logger');
+const cookieParser = require('cookie-parser');
+const cors = require('cors');
+const corsOptions = require('./config/corsOption');
+const PORT = process.env.PORT || 3500
+console.log(process.env.NODE_ENV)
 
-// ******************
-/* 1-CONFIGURATION */
-// ******************
-dotenv.config();
-const app = express();
-app.use(express.json());
-app.use(helmet());
-app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
-app.use(morgan("common"));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors());
-import clientRoutes from "./routes/client.js";
-import generalRoutes from "./routes/general.js";
-import managementRoutes from "./routes/management.js";
-import userRoutes from "./routes/user.js";
 
-// ******************
-/* 2-ROUTES        */
-// ******************
-app.use("/client", clientRoutes);
-app.use("/general", generalRoutes);
-app.use("/management", managementRoutes);
-app.use("/user", userRoutes);
+app.use(logger)
+
+app.use(cors(corsOptions))
+
+
+app.use(express.json())
+
+app.use(cookieParser())
+
+app.use('/', express.static(path.join(__dirname, 'public')))
+
+app.use('/', require('./routes/root'));
+app.all('*', (req, res) => {
+    res.status(404)
+    if (req.accepts('html')) {
+        res.sendFile(path.join(__dirname, 'views', '404.html'))
+    } else if (req.accepted('json')) {
+        res.json({ message: '404 NOT FOUND' })
+    } else {
+        res.type('txt').send('404 NOT FOUND')
+    }
+})
+
+app.use(errorHandler);
+
+
+app.listen(PORT, () => console.log(`Ssrver runing on port ${PORT}`));

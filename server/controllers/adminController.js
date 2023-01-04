@@ -56,7 +56,7 @@ const createNewUser = asyncHandler(async(req, res) => {
 // @access Private
 
 const updateUser = asyncHandler(async(req, res) => {
-    const { id, phoneNumber, roles, active, password } = req.body
+    const { id, phoneNumber, fullName, age, roles, gender, address, diagnosis, doctorsname, active, password } = req.body
 
     // Confirm data 
     if (!id || !phoneNumber || !Array.isArray(roles) || !roles.length || typeof active !== 'boolean') {
@@ -74,11 +74,17 @@ const updateUser = asyncHandler(async(req, res) => {
     const duplicate = await User.findOne({ phoneNumber }).lean().exec()
 
     // Allow updates to the original user 
-    if (duplicate && duplicate ?._id.toString() !== id) {
+    if (duplicate && duplicate?._id.toString() !== id) {
         return res.status(409).json({ message: 'نام کاربری تکراری' })
     }
 
     user.phoneNumber = phoneNumber
+    user.fullName = fullName
+    user.age = age
+    user.gender = gender
+    user.address = address
+    user.diagnosis = diagnosis
+    user.doctorsname = doctorsname
     user.roles = roles
     user.active = active
 

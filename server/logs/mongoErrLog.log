@@ -1,0 +1,3 @@
+20230102	19:36:19	9769cd78-69ce-44ec-8fe0-962235aa4f1c	undefined: ETIMEOUT	querySrv	_mongodb._tcp.cluster0.v6yglso.mongodb.net
+20230102	20:40:16	b46860a2-840c-4b68-b5b6-193dcb7c0749	undefined: ETIMEOUT	querySrv	_mongodb._tcp.cluster0.v6yglso.mongodb.net
+20230102	20:41:53	4e364c55-23ac-4192-bebf-02fc830e5270	undefined: ECONNREFUSED	querySrv	_mongodb._tcp.cluster0.v6yglso.mongodb.net

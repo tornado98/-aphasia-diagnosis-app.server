@@ -1,0 +1,53 @@
+20221231	00:07:02	a93a6d1d-5357-4892-a8e3-62e1610e7cf2	Error: Not allowed by CORS	OPTIONS	/	https://www.google.com
+20221231	00:07:02	076c29bb-d913-43fa-bb49-181a005c1311	Error: Not allowed by CORS	GET	/	https://www.google.com
+20221231	00:07:26	89f2ad70-9fb2-401e-8f13-91526382ef33	Error: Not allowed by CORS	OPTIONS	/	https://www.google.com
+20221231	00:07:26	fb374f96-08fd-460f-b068-38d3ce26b79e	Error: Not allowed by CORS	GET	/	https://www.google.com
+20230102	18:34:04	e781a3b8-88e4-41fe-82fb-363c3dd3088f	ValidationError: User validation failed: age: Path `age` is required., fullName: Path `fullName` is required., phoneNumber: Path `phoneNumber` (9203015014) is more than maximum allowed value (9).	POST	/users	undefined
+20230102	18:35:44	4c7c445d-a458-4f40-8f8c-7f3fb449b621	ValidationError: User validation failed: age: Path `age` is required., fullName: Path `fullName` is required., phoneNumber: Path `phoneNumber` (9203015014) is more than maximum allowed value (16).	POST	/users	undefined
+20230102	18:37:05	4441052c-3ecd-42b2-a2ad-06e18f55735b	ValidationError: User validation failed: age: Path `age` is required., fullName: Path `fullName` is required., phoneNumber: Path `phoneNumber` (9203015014) is more than maximum allowed value (16).	POST	/users	undefined
+20230102	18:38:29	cc367d62-dd34-42b9-8d3c-b63152d26d2d	ValidationError: User validation failed: age: Path `age` is required., fullName: Path `fullName` is required.	POST	/users	undefined
+20230102	19:57:15	a57cb770-6a34-418c-9093-0aeaf735734e	ValidationError: User validation failed: fullName: Path `fullName` is required., age: Path `age` is required.	POST	/users	undefined
+20230102	20:15:05	95ba57e4-9ac4-4395-9f8e-584e746daa71	ValidationError: User validation failed: gender: لطفا جنسیت خود را وارد کنید, fullName: لطفا نام و نام خانوادگی را وارد کنید, age: لطفا سن خود را وارد کنید	POST	/users	undefined
+20230102	20:16:08	1ebc9f69-1d85-4ee1-b742-3430efbb8f21	ValidationError: User validation failed: gender: لطفا جنسیت خود را وارد کنید, fullName: لطفا نام و نام خانوادگی را وارد کنید, age: لطفا سن خود را وارد کنید	POST	/users	undefined
+20230102	20:20:39	76b8240f-c58e-45b1-b617-fd8f807b74eb	ValidationError: User validation failed: fullName: لطفا نام و نام خانوادگی را وارد کنید, age: لطفا سن خود را وارد کنید, gender: لطفا جنسیت خود را وارد کنید	POST	/users	undefined
+20230102	20:27:54	c45c55a3-3947-4020-a7a1-eda3e07740b9	ValidationError: User validation failed: fullName: لطفا نام و نام خانوادگی را وارد کنید, age: لطفا سن خود را وارد کنید, gender: لطفا جنسیت خود را وارد کنید	POST	/users	undefined
+20230102	21:17:20	22488288-aadd-4c9d-9d54-89ccc6a61566	ValidationError: User validation failed: fullName: لطفا نام و نام خانوادگی خود را وارد کنید, age: لطفا سن خود را وارد کنید, gender: لطفا جنسیت خود را وارد کنید, diagnosis: لطفا اسم بیماری خود را وارد کنید	POST	/users	undefined
+20230102	21:18:20	06e28a0d-b009-4771-9949-b26038eed0f7	ValidationError: User validation failed: fullName: لطفا نام و نام خانوادگی خود را وارد کنید, age: لطفا سن خود را وارد کنید, gender: لطفا جنسیت خود را وارد کنید	POST	/users	undefined
+20230102	21:26:34	856030ed-f43c-40b8-b979-cdad0463a638	ValidationError: User validation failed: fullName: Path `fullName` is required.	POST	/users	undefined
+20230102	21:33:29	aef2cb00-04bb-4aa7-8ee0-fffc295a100c	ValidationError: User validation failed: fullName: Path `fullName` is required.	POST	/users	undefined
+20230102	21:34:53	4f176143-ad9e-4fd1-a329-edaecf92bba9	ValidationError: User validation failed: fullName: Path `fullName` is required.	POST	/users	undefined
+20230102	21:41:24	20b3a1df-1931-4db6-a124-22d67b3a4705	ValidationError: User validation failed: fullName: Path `fullName` is required.	POST	/users	undefined
+20230102	21:49:00	e002824c-45db-423c-a682-aba1cf7c412b	ValidationError: User validation failed: fullName: Path `fullName` is required.	POST	/users	undefined
+20230102	23:34:38	1250d7f5-d8f7-4480-9c29-4803fa8378e9	CastError: Cast to Number failed for value "۰۹۱۲۵۶۴۳۷۶۸" (type string) at path "phoneNumber" for model "User"	POST	/users	undefined
+20230103	00:30:33	6eaecb78-3676-4970-b690-e62c0e922653	ValidationError: User validation failed: fullName: Path `fullName` is required.	POST	/admin	undefined
+20230104	00:31:51	471c115a-e800-4bd5-80a5-f3b852de4655	SyntaxError: Unexpected string in JSON at position 71	POST	/admin	undefined
+20230104	00:32:27	c14c75c1-1f9d-4dc6-8c98-c7ff92ba7543	ValidationError: User validation failed: fullName: Path `fullName` is required., age: Path `age` is required., gender: Path `gender` is required., diagnosis: Path `diagnosis` is required.	POST	/admin	undefined
+20230104	00:32:46	59396e5f-cd44-48dc-b5e9-c9bdbd2bee8e	ValidationError: User validation failed: age: Path `age` is required., gender: Path `gender` is required., diagnosis: Path `diagnosis` is required.	POST	/admin	undefined
+20230104	14:33:22	a08391f4-ab0d-420d-987a-11fcd3f487c8	SyntaxError: Unexpected string in JSON at position 121	GET	/admin	undefined
+20230104	14:33:34	81007466-0ce0-46dc-a477-7af465541615	SyntaxError: Unexpected token } in JSON at position 3	GET	/admin	undefined
+20230104	14:33:40	05089852-e8d1-42b7-8bea-0f64aecc1702	SyntaxError: Unexpected end of JSON input	GET	/admin	undefined
+20230104	16:30:25	ca00caf3-4470-4e0d-b6e7-337b1772a20b	CastError: Cast to ObjectId failed for value "63b4985f1b3ddf77d9f85f3" (type string) at path "user" for model "Results"	DELETE	/admin	undefined
+20230125	22:20:12	828b3a5d-0fe6-4462-a46e-cbaa4446187e	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:20:31	eddd2a50-830e-4bd9-b3e7-edc76c12dd94	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:21:33	548023ea-622e-4aca-86af-86c777c9a4d6	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:22:34	7eef6e4c-3169-4b7c-ada6-7c6213b013ae	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:23:34	8dbb321f-26dd-47c7-98f1-fdd378975aaf	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:24:35	00deb815-e7dd-453c-be59-49d1963fb974	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:25:36	76943f96-f0fb-4a2d-b1a5-0cf1a77aae5c	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:26:37	310673bb-69cf-457d-915c-43c5287cf481	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:27:37	133b9c8b-3eb6-437d-ac48-0406a708696a	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:28:38	6b202fa4-dee1-44f9-bd27-467758b74302	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:29:39	6294bc39-fcd7-40c5-a22f-5085052dad3f	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:30:40	769b26ce-c6b2-45b2-ad36-786d5dcb3cf5	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	22:35:30	de8fbd25-ae24-4c5e-89ac-8d1935ec27cd	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	23:01:29	d2490294-e011-49e5-a484-5699b60bbd4f	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230125	23:43:06	7560ac34-5091-4157-a8a4-d48e8d4acfaa	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230126	00:07:40	46960dc7-b45b-470a-b1a2-df48997295cf	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230126	00:09:25	13510c11-b42a-4222-8af3-10699b3cd6ca	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230126	00:10:01	c5f8601c-c987-4b3f-87c6-67403c468ef0	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230126	00:11:41	60ac48c1-8637-418d-ba84-ab684ebee8b8	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230126	00:12:11	5990fa15-398a-41fe-9045-26ee24e32043	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230126	00:12:24	219b981c-c5af-44ee-83fc-b95c38e2e8b0	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230126	00:12:32	b75b561e-096c-42cb-9b48-e03a99815b19	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230126	00:13:35	b5f850cb-4dc8-4c31-9c0b-5e362635458f	Error: Not allowed by CORS	GET	/users	http://localhost:3001
+20230126	00:14:15	b9207070-a22a-44af-8a17-48eed47e5b41	Error: Not allowed by CORS	GET	/users	http://localhost:3001
